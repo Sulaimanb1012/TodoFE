@@ -120,7 +120,7 @@ export function deleteCompleted(todos: Todo[]): Todo[] {
   // 🐛 BUG: Can you spot what's wrong here?
   // Hint: filter keeps items where the condition is TRUE.
   // We want to KEEP the ones that are NOT completed…
-  return todos.filter((todo) => todo.completed);
+  return todos.filter((todo) => !todo.completed);
 }
 
 /**
